@@ -1,5 +1,7 @@
 # JSON Schema to TS
 
+[![License][license-image]][license]
+
 Convert JSON Schema files to TypeScript interfaces
 
 ## How to use
@@ -27,3 +29,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+[license-image]: http://img.shields.io/badge/license-Apache--2-blue.svg?style=flat
+[license]: http://www.apache.org/licenses/LICENSE-2.0
