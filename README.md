@@ -4,11 +4,11 @@ Convert JSON Schema files to TypeScript interfaces
 
 ## How to use
 
-Tested on Node.js (10, 12 or 14 LTS) and npm
+Tested on Node.js (10, 12 or 14 LTS)
 
 - Run `npm install`
 - Add your JSON Schemas to the `input` folder
-- Run `npm start`
+- Run `npm start` or `node index.js`
 - Your TypeScript interfaces will be in the `output` folder
 
 ### Credits
