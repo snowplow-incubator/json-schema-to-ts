@@ -1,0 +1,57 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for an example event",
+  "self": {
+    "vendor": "com.example",
+    "name": "example",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "required_property": {
+      "description": "A string property which is required in this schema",
+      "type": "string",
+      "maxLength": 1024
+    },
+    "optional_property": {
+      "description": "A number property which is optional in this schema",
+      "type": "number",
+      "minimum": 0
+    },
+    "array_property": {
+      "description": "A string array property",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "array_min_items_property": {
+      "description": "A string array property which must have at least one object",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "object_property": {
+      "description": "A object property which can have string and boolean values",
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "boolean"
+        ]
+      }
+    },
+    "enum_property": {
+      "description": "A string enum property which must be one of three values",
+      "enum": ["one", "two", "three"],
+      "type": "string"
+    }
+  },
+  "required": [
+    "required_property"
+  ],
+  "additionalProperties": true
+}

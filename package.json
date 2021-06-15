@@ -1,0 +1,17 @@
+{
+  "name": "json-schema-to-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/snowplow-incubator/json-schema-to-ts"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "json-schema-to-typescript": "^10.1.1"
+  }
+}
